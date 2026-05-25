@@ -315,6 +315,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
   moveSpeed: 7
+  gameInput: {fileID: 831236376}
 --- !u!4 &637111720
 Transform:
   m_ObjectHideFlags: 0
