@@ -6,8 +6,19 @@ public class Player : MonoBehaviour
     [SerializeField] private float moveSpeed = 7f;
     [SerializeField] private GameInput gameInput;
     [SerializeField] private LayerMask countersLayerMask;
+    
     private bool isWalking;
     private Vector3 lastInteractDir;
+
+    private void Start()
+    {
+        gameInput.OnInteractAction += GameInput_OnInteractAction;
+    }
+
+    private void GameInput_OnInteractAction(object sender, System.EventArgs e)
+    {
+        HandleInteractions();
+    }
 
     private void Update()
     {
@@ -19,7 +30,7 @@ public class Player : MonoBehaviour
     {
         return isWalking;
     }
-    private void HandelInteractions()
+    private void HandleInteractions()
     {
         Vector2 inputVector = gameInput.GetMovementVectorNormalized();
         Vector3 moveDir = new Vector3(inputVector.x, 0f, inputVector.y);
