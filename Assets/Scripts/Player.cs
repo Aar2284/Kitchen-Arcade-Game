@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
     private void Update()
     {
         HandleMovement();
-        HandelInteractions();
+        HandleInteractions();
     }
 
     public bool IsWalking()
