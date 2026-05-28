@@ -55,7 +55,7 @@ public class Player : MonoBehaviour
         Vector2 inputVector = gameInput.GetMovementVectorNormalized();
         Vector3 moveDir = new Vector3(inputVector.x, 0f, inputVector.y);
 
-        if(moveDir != lastInteractDir)
+        if(moveDir != Vector3.zero)
         {
             lastInteractDir = moveDir;
         }
@@ -71,17 +71,17 @@ public class Player : MonoBehaviour
                     //New ClearCounter
                     SetSelectedCounter(clearCounter);
                 }
-
-                else
-                {
-                    SetSelectedCounter(null);
-                }
             }
 
             else 
             {
                 SetSelectedCounter(null);
             }
+        }
+
+        else
+        {
+            SetSelectedCounter(null);
         }
     }
 
