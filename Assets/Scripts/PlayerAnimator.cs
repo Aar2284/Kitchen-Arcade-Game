@@ -1,19 +1,25 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerAnimator : MonoBehaviour
-{
-   private readonly int isWalkingHash = Animator.StringToHash("IsWalking");
+public class PlayerAnimator : MonoBehaviour {
 
-   [SerializeField] private Player player;
-   private Animator animator;
 
-   private void Awake()
-   {
-    animator = GetComponent<Animator>();
-   }
+    private const string IS_WALKING = "IsWalking";
 
-   private void Update()
-   {
-    animator.SetBool(isWalkingHash, player.IsWalking());
-   }
+
+    [SerializeField] private Player player;
+
+
+    private Animator animator;
+
+
+    private void Awake() {
+        animator = GetComponent<Animator>();
+    }
+
+    private void Update() {
+        animator.SetBool(IS_WALKING, player.IsWalking());
+    }
+
 }
