@@ -1,10 +1,21 @@
 using UnityEngine;
 
-public class ClearCounter : MonoBehaviour
+public class ClearCounter : BaseCounter
 {
-    
-    public void Interact()
+    [SerializeField] private KitchenObjScriptableObj kitchenObjectSO;
+
+    public override void Interact(Player player)
     {
-        
+        if (!HasKitchenObject())
+        {
+            // There is no KitchenObject here
+            Transform kitchenObjectTransform = Instantiate(kitchenObjectSO.prefab, GetKitchenObjectFollowTransform());
+            kitchenObjectTransform.GetComponent<KitchenObject>().SetKitchenObjectParent(this);
+        }
+        else
+        {
+            // There is a KitchenObject here
+            GetKitchenObject().SetKitchenObjectParent(player);
+        }
     }
 }
