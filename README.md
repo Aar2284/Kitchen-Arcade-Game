@@ -33,7 +33,7 @@
   </tr>
   <tr>
     <td><img src="Screenshots/DeliverySuccessUI.png" alt="Delivery Success UI" width="100%"></td>
-    <td><img src="Screenshots/DeliveryFailedUI.png" alt="Delivery Failed UI" width="100%"></td>
+    <td><img src="Screenshots/FailedDeliveryUI.png" alt="Delivery Failed UI" width="100%"></td>
   </tr>
   <tr>
     <td align="center"><b>Stove State Machine Cooking</b></td>
