@@ -39,7 +39,7 @@
 
 <div align="center">
   <b>Dynamic Main Menu & UI</b><br>
-  <img src="Screenshots/Screenshot5.png" alt="Main Menu" width="60%">
+  <img src="Screenshots/Menu.png" alt="Main Menu" width="60%">
 </div>
 
 </details>
