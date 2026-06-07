@@ -21,19 +21,27 @@
 <table>
   <tr>
     <td align="center"><b>Main Gameplay & Counters</b></td>
-    <td align="center"><b>Recipe Delivery UI</b></td>
+    <td align="center"><b>Recipe Cutting UI</b></td>
   </tr>
   <tr>
-    <td><img src="screenshots/screenshot1.png" alt="Main Gameplay" width="100%"></td>
-    <td><img src="screenshots/screenshot2.png" alt="Delivery UI" width="100%"></td>
+    <td><img src="Screenshots/Gameplay.png" alt="Main Gameplay" width="100%"></td>
+    <td><img src="Screenshots/Cutting.png" alt="Cutting UI" width="100%"></td>
   </tr>
   <tr>
-    <td align="center"><b>Stove State Machine (Cooking/Burning)</b></td>
-    <td align="center"><b>Cutting Counter Progress</b></td>
+    <td align="center"><b>Delivery Success UI</b></td>
+    <td align="center"><b>Delivery Failed UI</b></td>
   </tr>
   <tr>
-    <td><img src="screenshots/screenshot3.png" alt="Stove State Machine" width="100%"></td>
-    <td><img src="screenshots/screenshot4.png" alt="Cutting Counter" width="100%"></td>
+    <td><img src="Screenshots/DeliverySuccessUI.png" alt="Delivery Success UI" width="100%"></td>
+    <td><img src="Screenshots/DeliveryFailedUI.png" alt="Delivery Failed UI" width="100%"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Stove State Machine Cooking</b></td>
+    <td align="center"><b>Stove State Machine Burned</b></td>
+  </tr>
+  <tr>
+    <td><img src="Screenshots/Cooking.png" alt="Stove State Machine Cooking" width="100%"></td>
+    <td><img src="Screenshots/Burning.png" alt="Stove State Machine Burning" width="100%"></td>
   </tr>
 </table>
 
